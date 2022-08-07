@@ -17,3 +17,14 @@ const positiveOrNegative = (number) => {
   }
   return "Positive";
 }
+
+function compareTwoNumbers(a, b) {
+  // Sample code
+  if (typeof a !== 'number' || typeof b !== 'number') return "Inputs are not numbers";
+  if (a > b) {
+    return `${a} is greater than ${b}`;
+  } else if (a < b) {
+    return `${b} is greater than ${a}`;
+  }
+  return "Numbers are equal";
+}
