@@ -23,3 +23,20 @@ describe('positiveOrNegative', () => {
     expect(positiveOrNegative("abc")).to.equal("Not a number");
   })
 })
+
+describe('compareTwoNumbers', () => {
+  it('should return numbers are equal', () => {
+    expect(compareTwoNumbers(10, 10)).to.equal("Numbers are equal");
+  })
+  it('should return 10 is greater than 2', () => {
+    expect(compareTwoNumbers(10, 2)).to.equal("10 is greater than 2");
+  })
+
+  it('should return invalid input if not numbers', () => {
+    expect(compareTwoNumbers("10", 2)).to.equal("Inputs are not numbers");
+  })
+
+  it('should return invalid input if no input', () => {
+    expect(compareTwoNumbers()).to.equal("Inputs are not numbers");
+  })
+})
